@@ -1,1 +1,34 @@
-import {Route, Router} from '@angular/router';
+//angular imports 
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+
+// components necesary to get ours routes
+import { LeanTechMockupComponent } from '../views/lean-tech-mockup/lean-tech-mockup.component';
+import { Page404Component } from '../views/page404/page404.component';
+
+
+//instruction to declared our routes 
+const routing: Routes =
+    [
+        { path: '', component: LeanTechMockupComponent },
+        { path: 'home', component: LeanTechMockupComponent },
+        {path: '**', component: Page404Component},
+       
+        
+    ];
+@NgModule({
+    imports:
+        [
+            CommonModule,
+            RouterModule.forRoot(routing)
+        ],
+    declarations: [ ],
+
+    exports:
+        [
+            RouterModule
+        ]
+})
+export class LeanTechModule { }
