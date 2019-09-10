@@ -9,6 +9,10 @@ import { Page404Component } from './views/page404/page404.component';
 // routes component
 import { LeanTechModule } from './Routes/lean-tech-routes';
 
+// angular material imports / hammerjs
+import 'hammerjs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +25,8 @@ import { LeanTechModule } from './Routes/lean-tech-routes';
   imports: [
     BrowserModule,
     LeanTechModule,  //routes component
-    FormsModule
+    FormsModule, 
+    BrowserAnimationsModule //angular material 
 
   ],
   providers: [],
