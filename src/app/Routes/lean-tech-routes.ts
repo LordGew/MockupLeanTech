@@ -8,6 +8,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LeanTechMockupComponent } from '../views/lean-tech-mockup/lean-tech-mockup.component';
 import { Page404Component } from '../views/page404/page404.component';
 
+//material component
+import {MaterialImports} from '../Imports/material-Imports';
+
 
 //instruction to declared our routes 
 const routing: Routes =
@@ -22,7 +25,8 @@ const routing: Routes =
     imports:
         [
             CommonModule,
-            RouterModule.forRoot(routing)
+            RouterModule.forRoot(routing),
+            MaterialImports
         ],
     declarations: [ ],
 

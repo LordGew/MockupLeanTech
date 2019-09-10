@@ -10,6 +10,7 @@ import { Page404Component } from './views/page404/page404.component';
 import { LeanTechModule } from './Routes/lean-tech-routes';
 
 // angular material imports / hammerjs
+import {MaterialImports} from '../../src/app/Imports/material-Imports';
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     LeanTechModule,  //routes component
     FormsModule, 
-    BrowserAnimationsModule //angular material 
+    BrowserAnimationsModule, //angular material 
+    MaterialImports
 
   ],
   providers: [],
