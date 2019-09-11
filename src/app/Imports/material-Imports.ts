@@ -7,6 +7,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+
+
 
 @NgModule({
 imports: [  
@@ -18,6 +21,7 @@ imports: [
     MatGridListModule,
     MatSlideToggleModule,
     MatIconModule,
+    MatToolbarModule,
     
  ],
 declarations: [ ],
@@ -30,6 +34,7 @@ exports:[
     MatGridListModule,
     MatSlideToggleModule,
     MatIconModule,
+    MatToolbarModule,
     
 ]  
 })

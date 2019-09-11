@@ -1,0 +1,9 @@
+.leftContent{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border: gray;
+}
+.leftContent div{
+    padding: 20px;
+}
