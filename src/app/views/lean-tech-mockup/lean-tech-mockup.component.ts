@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lean-tech-mockup.component.css']
 })
 export class LeanTechMockupComponent implements OnInit {
-
+  showFiller= true;
   constructor() { }
 
   ngOnInit() {

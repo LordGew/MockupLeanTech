@@ -13,6 +13,8 @@ import { LeanTechModule } from './Routes/lean-tech-routes';
 import {MaterialImports} from '../../src/app/Imports/material-Imports';
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeDateComponent } from './views/home-date/home-date.component';
+import { NavigationComponent } from './views/navigation/navigation.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     Page404Component,
     LeanTechMockupComponent,
+    HomeDateComponent,
+    NavigationComponent,
    
     
   ],
