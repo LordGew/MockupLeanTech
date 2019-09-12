@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+=======
+/*Ccs to generate */
+.leftContent{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    border: gray;
+}
+.leftContent div{
+    padding: 20px;
+}
+
+/*main container css*/
+.main-container{
+    position: absolute;
+    border: 1px solid gray;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.second-container .mat-label{
+    position: absolute;
+    padding-top: 100px;
+}
+table {
+    width: 100%;
+  }
+>>>>>>> da99cb91655f56811206332cfd4956ff68828993
