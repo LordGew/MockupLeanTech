@@ -8,6 +8,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 
@@ -22,6 +24,7 @@ imports: [
     MatSlideToggleModule,
     MatIconModule,
     MatToolbarModule,
+    MatTableModule,
     
  ],
 declarations: [ ],
@@ -35,6 +38,7 @@ exports:[
     MatSlideToggleModule,
     MatIconModule,
     MatToolbarModule,
+    MatTableModule,
     
 ]  
 })
