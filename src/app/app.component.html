@@ -1,74 +1,66 @@
 <mat-drawer-container class="nav-container" autosize>
-     
-        <mat-tab-group mat-align-tabs="center">
-                <mat-tab class="tab">
-                    <p style="text-align: center"> Welcome to {{title}} made by {{subtitle}} </p>
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons"> home</mat-icon>
-                       <a [routerLink]="['/homedate']" >Home</a>
-                    </ng-template>
-                 
-                    
-                </mat-tab>
-            
-                <mat-tab>
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">message</mat-icon>
-                        Messages
-                    </ng-template>
-                    
+
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab class="tab">
+            <p style="text-align: center"> Welcome to {{title}} made by {{subtitle}} </p>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons"> home</mat-icon>
+                <a [routerLink]="['/homedate']">Home</a>
+            </ng-template>
 
 
-                </mat-tab>
-                <mat-tab>
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">star</mat-icon>
-                        Wishlist
-                    </ng-template>
-                    
+        </mat-tab>
 
-
-                </mat-tab>
-                <mat-tab>
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">settings_applications</mat-icon>
-                        Settings
-                    </ng-template>
-                    
-
-
-                </mat-tab>
-                <mat-tab>
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">person</mat-icon>
-                        My account
-                    </ng-template>
-                   
-
-
-                    <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px">
-                       
-                        <div>
-                          <button mat-raised-button color="primary">Aceptar</button>
-                      </div>
-                    
-                        <div>
-                          <button mat-raised-button color="primary" >Rechazar</button>
-                      </div>
-                              
-                     </div>
-                
-                </mat-tab>
-              
-            </mat-tab-group>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons">message</mat-icon>
+                Messages
+            </ng-template>
 
 
 
-    </mat-drawer-container>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons">star</mat-icon>
+                Wishlist
+            </ng-template>
+
+
+
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons">settings_applications</mat-icon>
+                Settings
+            </ng-template>
+
+
+
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="material-icons">person</mat-icon>
+                My account
+            </ng-template>
+
+
+
+            <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px">
+
+                <div>
+                    <button mat-raised-button color="primary">Aceptar</button>
+                </div>
+
+                <div>
+                    <button mat-raised-button color="primary">Rechazar</button>
+                </div>
+
+            </div>
+
+        </mat-tab>
+
+    </mat-tab-group>
+
     <router-outlet></router-outlet>
-
-    
-
-          
-          
-
+</mat-drawer-container>
