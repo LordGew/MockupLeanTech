@@ -8,6 +8,7 @@ import { Page404Component } from './views/page404/page404.component';
 
 // routes component
 import { LeanTechModule } from './Routes/lean-tech-routes';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // angular material imports / hammerjs
 import {MaterialImports} from '../../src/app/Imports/material-Imports';
@@ -33,7 +34,8 @@ import { NavigationComponent } from './views/navigation/navigation.component';
     LeanTechModule,  //routes component
     FormsModule, 
     BrowserAnimationsModule, //angular material 
-    MaterialImports
+    MaterialImports,
+    FlexLayoutModule,
 
   ],
   providers: [],

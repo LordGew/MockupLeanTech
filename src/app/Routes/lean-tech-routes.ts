@@ -19,8 +19,10 @@ const routing: Routes =
     [
         { path: '', component: LeanTechMockupComponent },
         { path: 'home', component: LeanTechMockupComponent },
+        { path: 'delivery', component: HomeDateComponent },
         {path: '**', component: Page404Component},
-        {path: 'homedate', component:HomeDateComponent},
+        
+      
         
        
         

@@ -7,6 +7,8 @@ export interface deliveryDateUpdate{
 }
 const  deliveryDate: deliveryDateUpdate[]=[
   {mainPlace:'Houstun, TX, 33619', secondPlace:'Atlanta, GA, 30123', price: 250.00},
+  {mainPlace:'Houstun, TX, 33619', secondPlace:'Atlanta, GA, 30123', price: 250.00},
+  {mainPlace:'Houstun, TX, 33619', secondPlace:'Atlanta, GA, 30123', price: 250.00},
 ]
 
 @Component({

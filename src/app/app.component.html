@@ -2,10 +2,9 @@
 
     <mat-tab-group mat-align-tabs="center">
         <mat-tab class="tab">
-            <p style="text-align: center"> Welcome to {{title}} made by {{subtitle}} </p>
             <ng-template mat-tab-label>
                 <mat-icon class="material-icons"> home</mat-icon>
-                <a [routerLink]="['/homedate']">Home</a>
+                <a [routerLink]="['/home']">Home</a>
             </ng-template>
 
 
@@ -46,21 +45,13 @@
 
 
 
-            <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px">
-
-                <div>
-                    <button mat-raised-button color="primary">Aceptar</button>
-                </div>
-
-                <div>
-                    <button mat-raised-button color="primary">Rechazar</button>
-                </div>
-
-            </div>
+            <!-- <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px">
+               
+            </div> -->
 
         </mat-tab>
 
     </mat-tab-group>
 
-    <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 </mat-drawer-container>

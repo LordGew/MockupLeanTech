@@ -1,41 +1,39 @@
-
-<table style="width:80%; ">
-  <tr>
-      <!-- <th>aa</th>
-      <th>aa</th>
-      <th>aaa</th>
-      <th>aa</th>
-      <th>aa</th>
-      <th>aaa</th>
-      <th></th> -->
-  </tr> 
-  <tr *ngFor="let deliveryStatus of deliveryShowDate">
-      <td>{{currentDate | date:'dd-MMMM h:mm'}} </td>
-      <td> <mat-icon class="material-icons">home</mat-icon> </td>
-      <td> {{deliveryStatus .mainPlace}} <br> <mat-icon class="material-icons">home</mat-icon> <br> {{deliveryStatus .secondPlace}} </td>
-      <td> <mat-icon class="material-icons">home</mat-icon> </td>
-      <td> ${{deliveryStatus.price}}.00 </td>
-      <td> <mat-icon class="material-icons">person</mat-icon> </td>
-      <td> <mat-icon class="material-icons">message</mat-icon></td>
-  </tr> 
+<div fxLayout="row" fxLayoutAlign="center center">
+<table style="width:80%; text-align:right ">
+    <tr>
+        <!-- <th>aa</th>
+        <th>aa</th>
+        <th>aaa</th>
+        <th>aa</th>
+        <th>aa</th>
+        <th>aaa</th>
+        <th></th> -->
+    </tr> 
+    <tr *ngFor="let deliveryStatus of deliveryShowDate">
+        <td>
+            {{currentDate | date:'dd-MMMM h:mm'}}
+        </td> <br>
+        <td>
+            <mat-icon class="material-icons">home</mat-icon>
+        </td> <br>
+        <td style="display: flex;flex-flow: column; align-items: center;">
+            {{deliveryStatus .mainPlace}}
+            <mat-icon class="material-icons">home</mat-icon>
+            {{deliveryStatus .secondPlace}}
+        </td><br>
+        <td>
+            <mat-icon class="material-icons">home</mat-icon>
+        </td>
+        <td>
+            {{deliveryStatus.price | currency}}
+        </td>
+        <td>
+            <mat-icon class="material-icons">person</mat-icon>
+        </td>
+        <td>
+            <mat-icon class="material-icons">message</mat-icon>
+        </td>
+    </tr>
+  </table>
+  </div>
   
-  <tr *ngFor="let deliveryStatus of deliveryShowDate">
-    <td>{{currentDate | date:'dd-MMMM h:mm'}} </td>
-    <td> <mat-icon class="material-icons">home</mat-icon> </td>
-    <td> {{deliveryStatus .mainPlace}} <br> <mat-icon class="material-icons">home</mat-icon> <br> {{deliveryStatus .secondPlace}} </td>
-    <td> <mat-icon class="material-icons">home</mat-icon> </td>
-    <td> ${{deliveryStatus.price}}.00 </td>
-    <td> <mat-icon class="material-icons">person</mat-icon> </td>
-    <td> <mat-icon class="material-icons">message</mat-icon></td>
-</tr> 
-
-<tr *ngFor="let deliveryStatus of deliveryShowDate">
-    <td>{{currentDate | date:'dd-MMMM h:mm'}} </td>
-    <td> <mat-icon class="material-icons">home</mat-icon> </td>
-    <td> {{deliveryStatus .mainPlace}} <br> <mat-icon class="material-icons">home</mat-icon> <br> {{deliveryStatus .secondPlace}} </td>
-    <td> <mat-icon class="material-icons">home</mat-icon> </td>
-    <td> ${{deliveryStatus.price}}.00 </td>
-    <td> <mat-icon class="material-icons">person</mat-icon> </td>
-    <td> <mat-icon class="material-icons">message</mat-icon></td>
-</tr> 
-</table>
