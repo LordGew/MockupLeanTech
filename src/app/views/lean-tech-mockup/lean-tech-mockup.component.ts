@@ -9,13 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lean-tech-mockup.component.css']
 })
 export class LeanTechMockupComponent implements OnInit {
-<<<<<<< HEAD
-  showFiller= true;
-  constructor() { }
-
-=======
   
->>>>>>> da99cb91655f56811206332cfd4956ff68828993
   ngOnInit() {
   }
 
