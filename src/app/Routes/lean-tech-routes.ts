@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 
+
 // components necesary to get ours routes
 import { LeanTechMockupComponent } from '../views/lean-tech-mockup/lean-tech-mockup.component';
 import { Page404Component } from '../views/page404/page404.component';

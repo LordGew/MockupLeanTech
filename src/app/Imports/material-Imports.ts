@@ -9,6 +9,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
+import {MatDividerModule} from '@angular/material/divider'; 
+import {MatListModule} from '@angular/material/list'; 
 
 
 
@@ -24,6 +26,8 @@ imports: [
     MatIconModule,
     MatToolbarModule,
     MatTableModule,
+    MatDividerModule,
+    MatListModule
     
  ],
 declarations: [ ],
@@ -38,6 +42,8 @@ exports:[
     MatIconModule,
     MatToolbarModule,
     MatTableModule,
+    MatDividerModule,
+    MatListModule
     
 ]  
 })
