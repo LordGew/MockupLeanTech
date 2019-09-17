@@ -1,84 +1,85 @@
-<mat-list>
-        
-<div class="main-content" >
-        <div class="sidenav-content" >
-                <mat-sidenav-container mode="side" opened>
-                
-                        <div>
-                                <mat-icon class="material-icons">add_alert</mat-icon>
-                                <input matInput type="search" placeholder="Filter">
-                        </div>
-                    <div >
-                            <i class="material-icons"> business_center</i>
-                            <mat-slide-toggle></mat-slide-toggle>
-                    </div>
-                    <div>    
-                        <i class="material-icons"> calendar_today </i>
-                            <mat-slide-toggle></mat-slide-toggle>
-                    </div>
-                    <div>
-                            <i class="material-icons"> favorite </i>
-                            <mat-slide-toggle></mat-slide-toggle>
-                    </div>
-                    <div>
-                        <p>Status</p>
-                    </div>
-                    <br>
-                    <div>
-                        <input matInput type="search" placeholder="Search">
-                    </div>
-                    <br>
-                    <div>
-                             <button mat-raised-button color="primary">Primary</button>
-                    </div>
+<div class="main-content">
+    <div class="sidenav-content">
+        <mat-sidenav-container mode="side" opened>
 
-                </mat-sidenav-container>
+            <div class="smart-filter">
+                <p> <span class="material-icons" id="material-icons"> add_alert</span> Smart filter </p>
+                <mat-divider></mat-divider>
             </div>
-    <div fxLayout="row" fxLayoutAlign="center center">
-        <table style="width:80%; text-align:right; margin: 5px; ">
-            <tr>
-                <!-- <th>aa</th>
-                <th>aa</th>
-                <th>aaa</th>
-                <th>aa</th>
-                <th>aa</th>
-                <th>aaa</th>
-                <th></th> -->
-            </tr>
-            <tr *ngFor="let deliveryStatus of deliveryShowDate">
-                <td>
-                    {{currentDate | date:'dd-MMMM h:mm'}}
-                </td>
-                 
-                <td>
-                    <mat-icon class="material-icons">home</mat-icon>
-                </td> 
-               
-                <td style="display: flex;flex-flow: column; align-items: center;">
-                    {{deliveryStatus .mainPlace}}
-                    <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
-                    {{deliveryStatus .secondPlace}}
-                </td>
-                
-                <td>
-                    <mat-icon class="material-icons">local_shipping</mat-icon>
-                </td>
-                <td>
-                    {{deliveryStatus.price | currency}}
-                </td>
-                <td>
-                    <mat-icon class="material-icons">looks_one</mat-icon>
-                </td>
-                <td>
-                    <mat-icon class="material-icons">more_vert</mat-icon>
-                </td>
-                
-            </tr>
-        </table>
-        
+            <br>
+            <div>
+
+                <mat-icon class="material-icons" id="material-icons"> business_center</mat-icon>
+                <mat-slide-toggle></mat-slide-toggle>
+            </div>
+            <div>
+                <mat-icon class="material-icons" id="material-icons"> calendar_today</mat-icon>
+
+                <mat-slide-toggle></mat-slide-toggle>
+            </div>
+            <div>
+                <mat-icon class="material-icons" id="material-icons"> favorite</mat-icon>
+                <mat-slide-toggle></mat-slide-toggle>
+            </div>
+            <br>
+            <mat-divider></mat-divider>
+            <div class="status">
+                <p>Status</p>
+            </div>
+            
+            <div class="btn-search">
+                <input matInput type="search" placeholder="Search">
+                <button mat-raised-button color="primary">Primary</button>
+            </div>
+
+        </mat-sidenav-container>
     </div>
-   
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <table style="width:80%; text-align:right; margin: 5px; ">
+                <tr>
+                    <!-- 
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>  
+                            -->
+                </tr>
+                <tr *ngFor="let deliveryStatus of deliveryShowDate">
+                    <td>
+                        {{currentDate | date:'dd-MMMM h:mm'}}
+                    </td>
+
+                    <td>
+                        <mat-icon class="material-icons">fairplanemode_active</mat-icon>
+                    </td>
+
+                    <td style="display: flex;flex-flow: column; align-items: center;">
+                        {{deliveryStatus .mainPlace}}
+                        <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
+                        {{deliveryStatus .secondPlace}}
+
+                    </td>
+
+                    <td>
+                        <mat-icon class="material-icons">local_shipping</mat-icon>
+                    </td>
+                    <td>
+                        {{deliveryStatus.price | currency}}
+                    </td>
+                    <td>
+                        <mat-icon class="material-icons">looks_one</mat-icon>
+                    </td>
+                    <td>
+                        <mat-icon class="material-icons">more_vert</mat-icon>
+                    </td>
+
+                </tr>
+            </table>
+
+    </div>
+
 
 </div>
-       
-</mat-list>
