@@ -26,7 +26,7 @@
             <div class="status">
                 <p>Status</p>
             </div>
-            
+            <br>
             <div class="btn-search">
                 <input matInput type="search" placeholder="Search">
                 <button mat-raised-button color="primary">Primary</button>
@@ -48,6 +48,7 @@
                             -->
                 </tr>
                 <tr *ngFor="let deliveryStatus of deliveryShowDate">
+                    
                     <td>
                         {{currentDate | date:'dd-MMMM h:mm'}}
                     </td>
@@ -78,6 +79,7 @@
 
                 </tr>
             </table>
+            
 
     </div>
 

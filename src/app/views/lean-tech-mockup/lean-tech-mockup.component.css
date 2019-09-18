@@ -28,7 +28,7 @@ table {
 
 .sidenav-content p{
     text-align: center;
-    padding-top: 10px;
+    padding: 20px;
     margin:5px;
 }
 #material-icons{
@@ -52,4 +52,9 @@ table {
     margin: 5px;
     width: 90%;
 }
+table  td {
+    padding:20px;
+    margin: 10px;
+}
+
 
