@@ -1,60 +1,91 @@
-
-/*main container css*/
-.main-container{
-    position: absolute;
-    border: 1px solid gray;
-    width: 100%;
-    height: 100%;
-    padding-top: 30px;
-
-}
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-table {
-    width: 100%;
-  }
-  .main-content{
-      padding: 30px;
-      margin: 20px;
-  }
-  .sidenav-content{
-    width: 200px;
-    float: left;
-}
+        /*main content css*/
+        .main-content{
+            padding: 30px;
+            margin: 20px;
+           
+          
+        }
+        /*end css*/
+        
+        /*start sidenav css*/
+        .sidenav-content{
+            margin-top: 10px;
+            margin: 30px;
+            width: 180px;
+            float: left;
+            
+        }
+        /*sidenav logo css*/
+      
+        /*end csss*/
 
 
-.sidenav-content p{
-    text-align: center;
-    padding: 20px;
-    margin:5px;
-}
-#material-icons{
-    padding: 5px;
-    margin: 10px;
-    
-}
-.smart-filter p span{
-    margin: 5px;
+        .sidenav-content p{
+            text-align: center;
+            padding: 20px;
+            margin:5px;
+        }
+        /* end css*/
+
+        /*sidenav search button css*/
+        .btn-search{
+            text-align: center;
+            padding: 2px;
+            width: 95%;
+        }
+        .btn-search button{
+            padding: 5px;
+            margin: 5px;
+            width: 90%;
+        }
+        /*end css sidenav*/
+
+
+        /* start nav search css*/
+        .nav-search{
+            padding-top: 20px;
+            margin: 5px;
+            height: auto;
+        }
+
+        .nav-search input[type=text] {
+            float: right;
+            padding-top: 6px;
+            margin-top: 4px;
+            margin-right:50px;
+            font-size: 12px;
+            background: rgb(190, 190, 190);
+            border-radius: 5px solid rgb(250, 248, 248);   
+        }
+        /* end navsearch css*/
+
+        /*table ccs */
+        .main-table table{
+            width: 100%;
    
-    
-}
-.btn-search{
-    text-align: center;
-    padding: 2px;
-    width: 95%;
-    
-}
-.btn-search button{
-    padding: 5px;
-    margin: 5px;
-    width: 90%;
-}
-table  td {
-    padding:20px;
-    margin: 10px;
-}
+        }
+        .main-table{
+            margin-top: 30px;
+        }
+        .main-table tr td{
+            padding-top: 50px;
+            margin: 0px;
+        }
+        /* end table css*/
 
 
+        /*sidenav icons css*/
+        #material-icons{
+            padding:8px;
+            margin: 8px;
+           
+          
+        }
+        /*end css block*/
+
+        .logo-img img{
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
