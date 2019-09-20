@@ -11,6 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import {MatDividerModule} from '@angular/material/divider'; 
 import {MatListModule} from '@angular/material/list'; 
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -27,7 +28,8 @@ imports: [
     MatToolbarModule,
     MatTableModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
     
  ],
 declarations: [ ],
@@ -43,7 +45,8 @@ exports:[
     MatToolbarModule,
     MatTableModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
     
 ]  
 })

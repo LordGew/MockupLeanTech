@@ -1,7 +1,7 @@
 <div class="main-content">
     <div class="sidenav-content">
         <mat-sidenav-container mode="side" opened class="color">
-           
+
 
             <div>
                 <span>
@@ -27,75 +27,72 @@
                 <mat-slide-toggle color="warn"></mat-slide-toggle>
             </div>
 
-
             <mat-divider></mat-divider>
 
             <div class="status">
                 <p>Status</p>
             </div>
-
-            <div class="btn-search">
-                <input matInput type="search" placeholder="Search">
-                <button mat-raised-button color="primary">Delivered</button>
+            <div class="delivered">
+                <mat-label>
+                    <input matInput type="search" placeholder="Search" class="btn-search">
+                    <p> <span> {{delivered}}</span> </p>
+                </mat-label>
             </div>
 
         </mat-sidenav-container>
     </div>
 
 
-    <!-- <div class="nav-search">
-            <input type="text" placeholder="Search..">
-    </div> -->
 
 
 
-    <div fxLayout="row"  >
-        <table >
-                <tr>
-                        <!-- 
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>  
-                                    -->
-                    </tr>
-                    <tr *ngFor="let deliveryStatus of deliveryShowDate" class="head">
-        
-                        <td>
-                            {{currentDate | date:'dd-MMM h:mm'}}
-                        </td>
-        
-                        <td>
-                            <mat-icon class="material-icons">fairplanemode_active</mat-icon>
-                        </td>
-        
-                        <td style="display: flex; flex-flow: column; align-items: center;">
-                            {{deliveryStatus .mainPlace}}
-                            <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
-                            {{deliveryStatus .secondPlace}}
-        
-                        </td>
-        
-                        <td>
-                            <mat-icon class="material-icons">local_shipping</mat-icon>
-                        </td>
-                        <td>
-                            {{deliveryStatus.price | currency}}
-                        </td>
-                        <td>
-                            <mat-icon class="material-icons">looks_one</mat-icon>
-                        </td>
-                        <td>
-                            <mat-icon class="material-icons">more_vert</mat-icon>
-                        </td>
-        
-                    </tr>
-                    
+
+    <div fxLayout="row" class="main-table">
+
+     
+        <table>
+                <div class="nav-search">
+                        <input type="text" placeholder="Search..">
+                    </div>
+            
+            <tr>
+             <!-- th content here-->
+            </tr>
+            <tr *ngFor="let deliveryStatus of deliveryShowDate" class="head">
+
+                <td>
+                    {{currentDate | date:'dd-MMM h:mm'}}
+                </td>
+
+                <td>
+                    <mat-icon class="material-icons" color="basic">fairplanemode_active</mat-icon>
+                </td>
+
+                <td style="display: flex; flex-flow: column; align-items: center;">
+                    {{deliveryStatus .mainPlace}}
+                    <mat-icon class="material-icons" color="warn">keyboard_arrow_down</mat-icon>
+                    {{deliveryStatus .secondPlace}}
+
+                </td>
+
+                <td>
+                    <mat-icon class="material-icons" color="basic">local_shipping</mat-icon>
+                </td>
+                <td>
+                    <p> <strong> {{deliveryStatus.price | currency}}</strong> </p>
+                </td>
+                <td>
+                    <mat-icon class="material-icons" color="accent">looks_one</mat-icon>
+                </td>
+                <td>
+                    <mat-icon class="material-icons">more_vert</mat-icon>
+                </td>
+
+            </tr>
+            <div class="btn-more">
+                <button mat-fab color="warn">+</button>
+            </div>
         </table>
-
 
     </div>
 

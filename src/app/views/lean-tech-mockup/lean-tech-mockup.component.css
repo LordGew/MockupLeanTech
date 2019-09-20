@@ -1,26 +1,22 @@
         /*main content css*/
         .main-content{
-            padding: 30px;
-            margin: 20px;
-            
+            margin: 5px;
         }
         /*end css*/
         
         /*start sidenav css*/
         .sidenav-content{
-            margin-top: 30px;
-            margin: 20px;
+            margin-top: 10px;
+            margin: 10px;
             width: 180px;
             float: left;
         }
+        /*sidenav color*/
        .color{
         background-color: rgb(230, 230, 230); 
        }
-        /*sidenav logo css*/
-      
-        /*end csss*/
-
-
+       /*end*/
+ 
         .sidenav-content p{
             text-align: center;
             padding: 20px;
@@ -29,44 +25,51 @@
         /* end css*/
 
         /*sidenav search button css*/
-        .btn-search{
-            text-align: center;
-            padding: 2px;
-            width: 95%;
+        .btn-search {
+           height: auto;
+            padding: 3px;
+            margin: 3px;
+            width: auto;
         }
-        .btn-search button{
-            padding: 5px;
-            margin: 5px;
-            width: 90%;
+      
+        .delivered p{
+            width: auto;
+            padding: 10px;
+            margin: 10px;
+            height: auto;
+            background-color: rgb(254, 254, 254)
         }
+    
         /*end css sidenav*/
 
 
         /* start nav search css*/
         .nav-search{
-            padding-top: 5px;
-            margin: 5px;
-           
+            width: 16%;
+            height: 5%;
+            padding-top: 10px;
+            margin: 1px; 
+            
         }
 
+
         .nav-search input[type=text] {
-            float: right;
             padding-top: 6px;
             margin-top: 4px;
             margin-right:50px;
-            font-size: 12px;
             background: rgb(190, 190, 190);
             border-radius: 5px solid rgb(250, 248, 248);   
         }
         /* end navsearch css*/
 
         /*table ccs */
+       
         table{
-            width:80%;
+            width:100%;
+            margin: 0px 90px;
             border-collapse: separate;
             border-spacing:0 15px;
-            padding: 20px;
-            float: right;
+             padding-top: 20px;
         }
         tr td{
             padding:10px;   
@@ -83,20 +86,14 @@
              border-top-right-radius: 10px;
              border-bottom-right-radius: 10px;
         }
-      
+       
+        .btn-more {
+           float: right;
+        }
 
         /*sidenav icons css*/
         #material-icons{
             padding:8px;
             margin: 8px;
-           
-          
         }
         /*end css block*/
-
-        .logo-img img{
-            width: 100%;
-            height: auto;
-            margin: 0px;
-            padding: 0px;
-        }

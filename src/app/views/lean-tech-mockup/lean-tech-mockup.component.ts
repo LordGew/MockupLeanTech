@@ -19,6 +19,7 @@ const  deliveryDate: deliveryDateUpdate[]=[
 export class LeanTechMockupComponent implements OnInit {
   currentDate = new Date();
   deliveryShowDate= deliveryDate;
+  delivered="DELIVERED";
   
   ngOnInit() {
   }
