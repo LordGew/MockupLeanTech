@@ -1,7 +1,6 @@
 <div class="main-content">
     <div class="sidenav-content">
-           
-        <mat-sidenav-container mode="side" opened>
+        <mat-sidenav-container mode="side" opened class="color">
            
 
             <div>
@@ -14,18 +13,18 @@
 
             <div>
                 <mat-icon class="material-icons" id="material-icons"> business_center</mat-icon>
-                <mat-slide-toggle></mat-slide-toggle>
+                <mat-slide-toggle color="warn"></mat-slide-toggle>
             </div>
 
             <div>
                 <mat-icon class="material-icons" id="material-icons"> calendar_today</mat-icon>
 
-                <mat-slide-toggle></mat-slide-toggle>
+                <mat-slide-toggle color="warn"></mat-slide-toggle>
             </div>
 
             <div>
                 <mat-icon class="material-icons" id="material-icons"> favorite</mat-icon>
-                <mat-slide-toggle></mat-slide-toggle>
+                <mat-slide-toggle color="warn"></mat-slide-toggle>
             </div>
 
 
@@ -44,59 +43,57 @@
     </div>
 
 
-
-
-    <div class="nav-search">
-        <input type="text" placeholder="Search..">
-    </div>
-
+    <!-- <div class="nav-search">
+            <input type="text" placeholder="Search..">
+    </div> -->
 
 
 
-    <div fxLayout="row" fxLayoutAlign="center center" class="main-table">
-        <table style="text-align:right; margin: 5px; ">
-            <tr>
-                <!-- 
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>  
-                            -->
-            </tr>
-            <tr *ngFor="let deliveryStatus of deliveryShowDate">
-
-                <td>
-                    {{currentDate | date:'dd-MMM h:mm'}}
-                </td>
-
-                <td>
-                    <mat-icon class="material-icons">fairplanemode_active</mat-icon>
-                </td>
-
-                <td style="display: flex;flex-flow: column; align-items: center;">
-                    {{deliveryStatus .mainPlace}}
-                    <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
-                    {{deliveryStatus .secondPlace}}
-
-                </td>
-
-                <td>
-                    <mat-icon class="material-icons">local_shipping</mat-icon>
-                </td>
-                <td>
-                    {{deliveryStatus.price | currency}}
-                </td>
-                <td>
-                    <mat-icon class="material-icons">looks_one</mat-icon>
-                </td>
-                <td>
-                    <mat-icon class="material-icons">more_vert</mat-icon>
-                </td>
-
-            </tr>
+    <div fxLayout="row"  >
+        <table >
+                <tr>
+                        <!-- 
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>  
+                                    -->
+                    </tr>
+                    <tr *ngFor="let deliveryStatus of deliveryShowDate" class="head">
+        
+                        <td>
+                            {{currentDate | date:'dd-MMM h:mm'}}
+                        </td>
+        
+                        <td>
+                            <mat-icon class="material-icons">fairplanemode_active</mat-icon>
+                        </td>
+        
+                        <td style="display: flex; flex-flow: column; align-items: center;">
+                            {{deliveryStatus .mainPlace}}
+                            <mat-icon class="material-icons">keyboard_arrow_down</mat-icon>
+                            {{deliveryStatus .secondPlace}}
+        
+                        </td>
+        
+                        <td>
+                            <mat-icon class="material-icons">local_shipping</mat-icon>
+                        </td>
+                        <td>
+                            {{deliveryStatus.price | currency}}
+                        </td>
+                        <td>
+                            <mat-icon class="material-icons">looks_one</mat-icon>
+                        </td>
+                        <td>
+                            <mat-icon class="material-icons">more_vert</mat-icon>
+                        </td>
+        
+                    </tr>
+                    
         </table>
 
 

@@ -2,19 +2,20 @@
         .main-content{
             padding: 30px;
             margin: 20px;
-           
-          
+            
         }
         /*end css*/
         
         /*start sidenav css*/
         .sidenav-content{
-            margin-top: 10px;
-            margin: 30px;
+            margin-top: 30px;
+            margin: 20px;
             width: 180px;
             float: left;
-            
         }
+       .color{
+        background-color: rgb(230, 230, 230); 
+       }
         /*sidenav logo css*/
       
         /*end csss*/
@@ -43,9 +44,9 @@
 
         /* start nav search css*/
         .nav-search{
-            padding-top: 20px;
+            padding-top: 5px;
             margin: 5px;
-            height: auto;
+           
         }
 
         .nav-search input[type=text] {
@@ -60,19 +61,29 @@
         /* end navsearch css*/
 
         /*table ccs */
-        .main-table table{
-            width: 100%;
-   
+        table{
+            width:80%;
+            border-collapse: separate;
+            border-spacing:0 15px;
+            padding: 20px;
+            float: right;
         }
-        .main-table{
-            margin-top: 30px;
+        tr td{
+            padding:10px;   
         }
-        .main-table tr td{
-            padding-top: 50px;
-            margin: 0px;
+        tr.head td{
+            background-color:rgb(255, 255, 255);
+            color:rgb(155, 155, 155);
         }
-        /* end table css*/
-
+        tr.head td:first-child{
+             border-top-left-radius: 10px;
+             border-bottom-left-radius: 10px;
+        }
+        tr.head td:last-child{
+             border-top-right-radius: 10px;
+             border-bottom-right-radius: 10px;
+        }
+      
 
         /*sidenav icons css*/
         #material-icons{

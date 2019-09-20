@@ -1,45 +1,48 @@
-<mat-drawer-container class="nav-container" autosize>   
-<div class="nav-main">
+<mat-drawer-container class="nav-container" autosize>
+    <div class="nav-main">
         <mat-tab-group mat-align-tabs="center">
-                <mat-tab class="tab">
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons"> home</mat-icon>
-                        <a [routerLink]="['/home']">Home  </a>
-                    </ng-template>
-                </mat-tab>
-        
-                <mat-tab class="tab">
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">message</mat-icon>
-                        <a [routerLink]="['/delivery']">Messages  </a>
-                    </ng-template>
-                </mat-tab>
-        
-                <mat-tab class="tab">
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">star</mat-icon>
-                        Wishlist
-                    </ng-template>
-                </mat-tab >
-        
-                <mat-tab class="tab">
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">settings_applications</mat-icon>
-                        Settings
-                    </ng-template>
-                </mat-tab >
-        
-                <mat-tab class="tab">
-                    <ng-template mat-tab-label>
-                        <mat-icon class="material-icons">person</mat-icon>
-                        My account
-                    </ng-template>
-                    <!-- <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px"> 
+            <mat-tab class="tab">
+                <ng-template mat-tab-label>
+                    <mat-icon class="material-icons"> home</mat-icon>
+                    <a [routerLink]="['/home']">Home </a>
+                </ng-template>
+            </mat-tab>
+
+            <mat-tab class="tab">
+                <ng-template mat-tab-label>
+                    <mat-icon class="material-icons">message</mat-icon>
+                    <a [routerLink]="['/delivery']">Messages </a>
+                </ng-template>
+            </mat-tab>
+
+            <mat-tab class="tab">
+                <ng-template mat-tab-label>
+                    <mat-icon class="material-icons">star</mat-icon>
+                    Wishlist
+                </ng-template>
+            </mat-tab>
+
+            <mat-tab class="tab">
+                <ng-template mat-tab-label>
+                    <mat-icon class="material-icons">settings_applications</mat-icon>
+                    Settings
+                </ng-template>
+            </mat-tab>
+
+            <mat-tab class="tab">
+                <ng-template mat-tab-label>
+                    <mat-icon class="material-icons">person</mat-icon>
+                    My account
+                </ng-template>
+                <!-- <div fxLayout="row" style="padding-top: 10px" fxLayoutGap="200px"> 
                     </div> -->
-                </mat-tab>
-            </mat-tab-group>  </div>
-            <div class="logo-img">
-                    <img src="../../../assets/images/logo-leantech.png" alt="snow" >
-            </div>
-<router-outlet></router-outlet>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <div class="logo-img">
+        <img src="../../../assets/images/logo-leantech.png" alt="snow">
+    </div>
+
+    <router-outlet></router-outlet>
 </mat-drawer-container>
