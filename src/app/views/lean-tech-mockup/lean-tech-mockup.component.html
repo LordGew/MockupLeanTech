@@ -1,9 +1,13 @@
 <div class="main-content">
-        <div class="nav-search">
-                <input type="text" placeholder="Search..">
-            </div>
-        
+    <div class="nav-search">
+        <input type="text" placeholder="Search..">
+    </div>
+
     <div class="sidenav-content">
+            <div  class="search-icon">
+                    <p>  <mat-icon class="material-icons"  color="warn">check_circle</mat-icon></p>
+                   
+                </div>
         <mat-sidenav-container mode="side" opened class="color">
 
 
@@ -44,21 +48,22 @@
             </div>
 
         </mat-sidenav-container>
+        
     </div>
 
-
    
-
     <div fxLayout="row" class="main-table">
-
-
         <table>
 
-
+            
             <tr>
                 <!-- th content here-->
             </tr>
             <tr *ngFor="let deliveryStatus of deliveryShowDate" class="head">
+                
+                    <td>
+                            <mat-icon class="material-icons" color="warn">check_circle</mat-icon>
+                    </td>
 
                 <td>
                     {{currentDate | date:'dd-MMM h:mm'}}

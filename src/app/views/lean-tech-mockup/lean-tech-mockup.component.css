@@ -19,14 +19,14 @@
  
         .sidenav-content p{
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             margin:5px;
         }
         /* end css*/
 
         /*sidenav search button css*/
         .btn-search {
-           height: 80%;
+            height: 90%;
             padding: 3px;
             margin: 3px;
             width: 90%;
@@ -68,7 +68,7 @@
         .main-table{
             float: right ;
             width: 80%;
-            height: auto;
+            height: 80%;
             margin-right: -10px;
         }
        
@@ -80,8 +80,7 @@
     
         }
         tr td{
-            padding:10px; 
-          
+            padding:30px; 
         }
         tr.head td{
             background-color:rgb(255, 255, 255);
@@ -99,7 +98,7 @@
        
         .btn-more {
            float: right;
-           margin-right: -345%;
+           margin-right: -73em;
         }
 
         /*sidenav icons css*/
@@ -108,3 +107,14 @@
             margin: 8px;
         }
         /*end css block*/
+
+        /*search icon ccs*/
+        .search-icon p{
+            margin-right: -51.5em; 
+            padding: 20px;
+           
+        }
+        .search-icon{
+            align-items: center;
+        }
+        /*end*/
