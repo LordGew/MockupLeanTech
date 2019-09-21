@@ -8,7 +8,7 @@
         .sidenav-content{
             margin-top: 10px;
             margin: 10px;
-            width: 180px;
+            width: 200px;
             float: left;
         }
         /*sidenav color*/
@@ -26,10 +26,10 @@
 
         /*sidenav search button css*/
         .btn-search {
-           height: auto;
+           height: 80%;
             padding: 3px;
             margin: 3px;
-            width: auto;
+            width: 90%;
         }
       
         .delivered p{
@@ -49,6 +49,8 @@
             height: 5%;
             padding-top: 10px;
             margin: 1px; 
+            float: right;
+            margin-right: -25px;
             
         }
 
@@ -63,16 +65,23 @@
         /* end navsearch css*/
 
         /*table ccs */
+        .main-table{
+            float: right ;
+            width: 80%;
+            height: auto;
+            margin-right: -10px;
+        }
        
         table{
             width:100%;
             margin: 0px 90px;
             border-collapse: separate;
-            border-spacing:0 15px;
-             padding-top: 20px;
+            border-spacing:0 10px;
+    
         }
         tr td{
-            padding:10px;   
+            padding:10px; 
+          
         }
         tr.head td{
             background-color:rgb(255, 255, 255);
@@ -81,6 +90,7 @@
         tr.head td:first-child{
              border-top-left-radius: 10px;
              border-bottom-left-radius: 10px;
+             
         }
         tr.head td:last-child{
              border-top-right-radius: 10px;
@@ -89,6 +99,7 @@
        
         .btn-more {
            float: right;
+           margin-right: -345%;
         }
 
         /*sidenav icons css*/
