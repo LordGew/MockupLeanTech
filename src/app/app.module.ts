@@ -14,8 +14,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MaterialImports} from '../../src/app/Imports/material-Imports';
 import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeDateComponent } from './views/home-date/home-date.component';
-import { NavigationComponent } from './views/navigation/navigation.component';
+
 
 
 
@@ -24,10 +23,6 @@ import { NavigationComponent } from './views/navigation/navigation.component';
     AppComponent,
     Page404Component,
     LeanTechMockupComponent,
-    HomeDateComponent,
-    NavigationComponent,
-   
-    
   ],
   imports: [
     BrowserModule,
