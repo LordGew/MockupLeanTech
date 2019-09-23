@@ -2,11 +2,12 @@
         .main-content{
             margin: 5px;
         }
+
         /*end css*/
         
         /*start sidenav css*/
         .sidenav-content{
-            margin-top: 10px;
+            margin-top: -0px;
             margin: 10px;
             width: 200px;
             float: left;
@@ -19,7 +20,7 @@
  
         .sidenav-content p{
             text-align: center;
-            padding: 10px;
+            padding: 10px; 
             margin:5px;
         }
         /* end css*/
@@ -47,11 +48,10 @@
         .nav-search{
             width: 16%;
             height: 5%;
-            padding-top: 10px;
+            padding-top: 20px;
             margin: 1px; 
             float: right;
-            margin-right: -25px;
-            
+            margin-right: 50px;  
         }
 
 
@@ -66,6 +66,7 @@
 
         /*table ccs */
         .main-table{
+            padding-top: 50px;
             float: right ;
             width: 80%;
             height: 80%;
@@ -80,41 +81,54 @@
     
         }
         tr td{
-            padding:30px; 
+            padding:20px; 
         }
         tr.head td{
             background-color:rgb(255, 255, 255);
             color:rgb(155, 155, 155);
         }
         tr.head td:first-child{
-             border-top-left-radius: 10px;
-             border-bottom-left-radius: 10px;
+             border-top-left-radius: 25px;
+             border-bottom-left-radius: 25px;
              
         }
         tr.head td:last-child{
-             border-top-right-radius: 10px;
-             border-bottom-right-radius: 10px;
+             border-top-right-radius: 25px;
+             border-bottom-right-radius: 25px;
         }
-       
+        /*end*/
+
+        /*button more css*/
         .btn-more {
-           float: right;
-           margin-right: -73em;
+           right: 0;
+           margin-right: 2%;
+           position: fixed;
+           width: 10%;
+           height: 10%;
         }
+        /*end*/
 
         /*sidenav icons css*/
         #material-icons{
             padding:8px;
             margin: 8px;
         }
+        .mat-icon {
+            font-size: 30px;
+        }
         /*end css block*/
+
 
         /*search icon ccs*/
         .search-icon p{
-            margin-right: -51.5em; 
+            margin-right: -34em; 
             padding: 20px;
+            position: static;
            
         }
         .search-icon{
             align-items: center;
         }
         /*end*/
+
+      
