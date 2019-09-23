@@ -7,7 +7,7 @@
         
         /*start sidenav css*/
         .sidenav-content{
-            margin-top: -0px;
+            margin-top: 0px;
             margin: 10px;
             width: 200px;
             float: left;
@@ -27,18 +27,19 @@
 
         /*sidenav search button css*/
         .btn-search {
-            height: 90%;
+            height: 80%;
             padding: 3px;
             margin: 3px;
             width: 90%;
         }
       
         .delivered p{
-            width: auto;
+            width: 148px;
             padding: 10px;
             margin: 10px;
-            height: auto;
-            background-color: rgb(254, 254, 254)
+            height: 20px;
+            background-color: rgb(254, 254, 254);
+            position: fixed;  
         }
     
         /*end css sidenav*/
